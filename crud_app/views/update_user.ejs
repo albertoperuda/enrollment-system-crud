@@ -1,0 +1,70 @@
+
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Use the below form to Update an account</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+ <form method="POST" id="update_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="modulecode" class="text-light">Module Code</label>
+            <input type="hidden" name="id" value="<%= user._id %>">
+            <input type="text" name="modulecode" value="<%= user.modulecode %>" placeholder="Mark Stoenis">
+        </div>
+        <div class="form-group">
+            <label for="modulename" class="text-light">Module Name</label>
+            <input type="text" name="modulename" value="<%= user.modulename%>" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="semester" class="text-light">Semester</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="semester" value="First" <%= user.semester == 'First' ? 'checked' : '' %>>
+                <label for="radio-2" class="radio-label">First Semester</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="semester" value="Second"  <%= user.semester == 'Second' ? 'checked' : '' %> >
+                <label for="radio-3" class="radio-label">Second Semester</label>
+            </div>
+        </div>
+
+        <label for="day">Day:</label>
+
+            <select name="day" id="day">
+                <option value="Monday" <%= user.day == 'Monday' ? 'checked' : '' %> >Monday</option>
+                <option value="Tuesday"  <%= user.day == 'Tuesday' ? 'checked' : '' %> >Tuesday</option>
+                <option value="Wednesday" <%= user.day == 'Wednesday' ? 'checked' : '' %> >Wednesday</option>
+                <option value="Thursday" <%= user.day == 'Thursday' ? 'checked' : '' %> >Thursday</option>
+                <option value="Friday" <%= user.day == 'Friday' ? 'checked' : '' %> >Friday</option>
+                <option value="Saturday" <%= user.day == 'Saturday' ? 'checked' : '' %>>Saturday</option>
+            </select>
+
+
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
+       
+    </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

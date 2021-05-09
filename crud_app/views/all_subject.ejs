@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+* {
+        box-sizing: border-box;
+      }
+      .column{
+        float: center;
+        width: 100%;
+      }
+      
+      .container {
+       max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+  }
+  tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+        <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                        <a href="/" class="nav-brand text-dark">Enrollment System</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+    <!--header-->
+
+    <ul>
+  <li><a href="/">Subject</a></li>
+  <li><a href="/coordinator-user">Coordinator</a></li>
+  <li><a class="active" href="/all-subject">Student with Subject</a></li>
+  <li><a href="/student-profile">Students Profile</a></li>
+</ul>
+
+<div id="student" class="container-fluid tab-pane active"  style="position: absolute; left: 10px;">
+    <div class="row">
+    <div class=" col-sm-12" style="position: absolute;">
+      <div class="col-sm-2 image-upload-wrap bg-white" style=" margin-top: 25px; margin-left: 10px; padding-bottom: 180px; border-radius: 15px;">
+        
+          <div class="col-sm-10">
+            
+
+                <br>
+                <br>
+           <div style = "width: 220px; height: 220px; line-height: 100em; overflow:scroll; border: thin #000 solid; padding: 5px;">
+           <h5> Student </h5>
+             <h5> Student </h5>
+               <h5> Student </h5>
+                 <h5> Student </h5>
+                   <h5> Student </h5>
+                   <p> Student </p>
+
+
+           </div>
+           <br>
+           <br>
+           <div style = "width: 220px; height: 220px; line-height: 100em; overflow:scroll; border: thin #000 solid; padding: 5px;">
+            <h5> Student </h5>
+            <p> Student </p>
+           </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+               <button class="btn btn-primary btn-sm mx-auto">Add </button>
+
+<button class="btn btn-info btn-sm mx-auto">Search </button>
+
+<button class="btn btn-default btn-sm mx-auto"> </button>
+           
+            <button style="position: absolute; bottom: 55px; right: 15px; width: 90%" type="submit" class="btn btn-warning btn-sm">Submit</button>
+            <button style="position: absolute; bottom: 15px; right: 15px; width: 90%" type="submit" class="btn btn-warning btn-sm">Remove</button>
+            
+        
+      </div>
+    </div>
+
+      <div id="addemp" class="col-sm-10">
+        <div class="col-sm-11  bg-dark" style="margin-top: 28px; border-radius: 15px; padding-bottom: 103px; position: absolute; left: 300px">
+                  <h2 style="padding-top: 30px; color: white">Subject 1 </h2>
+                  <form action="">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <br>
+                          <div class="row">
+                            <div class="col-sm-12 input-group mb-4">
+                              <div class="input-group-append">
+
+                               
+
+
+                                                <button class="btn btn-primary btn-sm mx-auto">Add student</button>
+
+                              
+                              </div>
+                              <br>
+                                    <button class="btn btn-info btn-sm mx-auto">Total Student</button>
+                                    <br>
+                               <input type="text" name="efn" id="efn" class="form-control" placeholder=""> 
+                            </div>
+                          </div>
+                        </div>  
+                      </div>  
+
+
+
+                            <div class="row">
+                              <div class="column">
+                                
+                                <table style=" color:white; font-family: arial, sans-serif; border-collapse: collapse; width: 100%; position: absolute">
+                                  <tr>
+                                     <td>.<td>
+
+                                     <th>Student ID</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Remove</th>
+                                    
+
+
+                                  </tr>
+                                  <tr>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>
+                                    
+
+
+                                      <button class="btn btn-primary btn-sm mx-auto">Update</button>
+
+
+                                      
+                                    </td>
+
+
+                                  </tr>
+                                </table>
+                                
+
+
+
+                              <h2 style="padding-top: 80px; color: white">Subject 2 </h2>
+                  <form action="">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <br>
+                          <div class="row">
+                            <div class="col-sm-12 input-group mb-4">
+                              <div class="input-group-append">
+
+                              
+
+                                              <td>.<td> <td>.<td>  <button class="btn btn-primary btn-sm mx-auto">Add student</button>
+                               
+                              
+                              </div>
+                                    <button class="btn btn-info btn-sm mx-auto">Total Student</button>
+                              <input type="text" name="efn" id="efn" class="form-control" placeholder=" "> 
+                            </div>
+                          </div>
+                        </div>  
+                      </div>  
+
+
+
+                            <div class="row">
+                              <div class="column">
+                                <buttom>
+                                    <td>.<td>
+                                 
+                                 <td>.<td>   <table style="color:white; font-family: arial, sans-serif; border-collapse: collapse; width: 101%; position: absolute">
+                                  <tr>
+                                     <td>.<td>
+
+                                     <th>Student ID</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Remove</th>
+                                    
+
+
+                                  </tr>
+                                  <tr>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>.</td>
+                                    <td>
+                                    
+
+                                      <button class="btn btn-primary btn-sm mx-auto">Update</button>
+
+
+                                      
+                                    </td>
+
+
+                                  </tr>
+                                </table>
+                            
+
+                              </div>
+                            </div>
+                    </div>
+                  </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./Bootstrap 4 Demonstration_files/bootstrap.min.css"> 
+  <script src="./Bootstrap 4 Demonstration_files/jquery.min.js.download"></script>
+  <script src="./Bootstrap 4 Demonstration_files/popper.min.js.download"></script>
+  <script src="./Bootstrap 4 Demonstration_files/bootstrap.min.js.download"></script>
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+body {
+  background-image: url('https://www.eviaglobal.com/images/task-management-system.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:  100% 100%;
+    color: white;
+  }
+  * {
+        box-sizing: border-box;
+      }
+      .column{
+        float: center;
+        width: 100%;
+      }
+      .container {
+       max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+  }
+  tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+    </style>
+</head>
+<body>
+    
+    <!-- Header -->
+        <header id="header">
+            <nav>
+                <div class="container">
+                    <div class="text-center">
+                        <a href="/" class="nav-brand text-dark">Enrollment System</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+    <!--header-->
+
+    <ul>
+  <li><a href="/">Subject</a></li>
+  <li><a href="/coordinator-user">Coordinator</a></li>
+  <li><a href="/all-subject">Student with Subject</a></li>
+  <li><a class="active" href="/student-profile">Student Profile</a></li>
+</ul>
+
+<div id="student" class="container-fluid tab-pane active" style="position: absolute; left: 10px;">
+    <div class="row">
+    <div class=" col-sm-12" style="position: absolute;">
+      <div class="col-sm-2 image-upload-wrap bg-dark" style=" margin-top: 25px; margin-left: 10px; padding-bottom: 340px; border-radius: 15px;">
+        
+          <div class="col-sm-10">
+            <img src="./Bootstrap 4 Demonstration_files/432-4325002_icon-profile-bio-avatar-person-symbol-chat-icon.png" style="height: 150px; width: 150px; margin-top: 30px">
+          </div> <br>
+          <p><b>Jonathan Smith</b> <br></p>
+           <link rel="stylesheet" type="nav-link" href="http//:google.com"><u>jonathansmith@gmail.com </u>
+            <button style="position: absolute; bottom: 25px; right: 15px; width: 90%" type="submit" class="btn btn-warning btn-sm">Edit Subject </button>
+            <button style="position: absolute; bottom: 70px; right: 15px; width: 90%" type="submit" class="btn btn-warning btn-sm">Edit Profile</button>
+        
+      </div>
+    </div>
+
+      <div id="addemp" class="col-sm-10">
+        <div class="col-sm-11  bg-dark" style="margin-top: 430px; border-radius: 15px; padding-bottom: 20px; position: absolute; left: 290px">
+
+          
+                  <h3 style="padding-top: 30px; color: yellow"><b>Time Table</h3>
+       
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <br>
+                          <div class="row">
+                            <div class="col-sm-12 input-group mb-4">
+                              <div class="input-group-append">
+                         
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>   <br><br
+
+
+
+                            <div class="row">
+                              <div class="column">
+                                
+                                <table style="font-family: arial, sans-serif; border-collapse: collapse; width: 100%; position: absolute">
+                                  <tbody>
+
+                                    <tr>
+
+                                    <th><button style="position: absolute; bottom: 55px; right: 860px; width: 15%" type="submit" class="btn btn-warning btn-sm">Module code</button></th>
+                                    <th><button style="position: absolute; bottom: 55px; right: 660px; width: 15%" type="submit" class="btn btn-warning btn-sm">Module name</button></th>
+                                  <th><button style="position: absolute; bottom: 55px; right: 460px; width: 15%" type="submit" class="btn btn-warning btn-sm">Semester</button></th>
+                                    <th><button style="position: absolute; bottom: 55px; right: 260px; width: 15%" type="submit" class="btn btn-warning btn-sm">Day</button></th>
+                                   <th><button style="position: absolute; bottom: 55px; right: 60px; width: 15%" type="submit" class="btn btn-warning btn-sm">Time Slot</button></th>
+                                   
+
+                                </tbody>
+                              </table>
+                                
+                              </div>
+                              </div>
+                    </div>
+                  </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ </div>
+</div>
+
+        <div id="addemp" class="col-sm-10"> 
+        <div class="col-sm-11  bg-dark" style="margin-top: 20px; border-radius: 15px; padding-bottom: 200px; position: absolute; left: 300px">
+
+
+ <h2 style="padding-top: 30px; color: yellow "><b>Personal Details </b></h2>
+             
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <br>
+                          <div class="row"> 
+                            <div class="col-sm-12 input-group mb-4">
+                              <div class="input-group-append"> 
+                         
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  
+                      </div>  
+
+
+                          <div class="row">
+                              <div class="column">
+                                
+                                <table style="font-family: arial , sans-serif; border-collapse: collapse; width: 100%; position: absolute">
+                                  <tbody>
+          <tr>
+        <th>
+          <td>Firstname:</td>
+        <td>  <input type="text" id fname="fname">
+        </td>
+
+          <td>Lastname:  </td>
+            <td>  <input type="text"lname="fname"></td>
+    </th>
+  <tr>
+    
+  </tr>                                                                       
+    <th>
+      <td>Date of Birth:  </td>
+        <td> <input type="text"dateofbirth="DOB"></td>
+          <td>Gender:  </td>
+            <td> <input type="text"gender="gender"> </td>
+      
+      
+    </th>
+ <tr>
+   
+ </tr>
+    <th>
+      <td>Address: </td>
+        <td> <input type="text"adress="address"></td>
+          <td>Contact No.:  </td>
+            <td> <input type="text"contach="contactno"> </td> 
+    </th>
+ <tr>
+   
+ </tr>
+    <th>
+      <td>AI. Stream: </td>
+        <td> <input type="text"aistream="AI. Stream"></td>
+          <td> Z-Score:</td>
+            <td> <input type="text"z-score="Z-Score"></td>
+  </th>
+</tr>
+
+
+         </tbody>
+        </table>
+      
+    </div>
+   </div>
+ </div>
+</form>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

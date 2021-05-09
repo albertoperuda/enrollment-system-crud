@@ -1,0 +1,41 @@
+ <!-- form handling -->
+ <form action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="modulecode" class="text-light">Module Code</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="modulecode" value="" placeholder="ex.C09">
+        </div>
+        <div class="form-group">
+            <label for="modulename" class="text-light">Module Name</label>
+            <input type="text" name="modulename" value="" placeholder="exampe.math">
+        </div>
+        <div class="form-group">
+            <label for="semester" class="text-light">Semester</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="semester" value="First" >
+                <label for="radio-2" class="radio-label">First Semester</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="semester" value="Second" >
+                <label for="radio-3" class="radio-label">Second Semester</label>
+            </div>
+        </div>
+
+        <label for="day">Day:</label>
+
+            <select name="day" id="day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+            </select>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
